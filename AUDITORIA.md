@@ -2,9 +2,13 @@
 
 **Alcance:** `index.html`, `styles.css` y `script.js` de la página estática de Cristiano Ronaldo.
 
-**Método:** revisión estática del HTML, CSS y JavaScript; validación con navegador local mediante Playwright en 320 px, 398 px, 768 px y 1440 px; prueba de teclado, interacción de timeline, menú móvil, carga de imágenes, enlaces internos, overflow y sintaxis JavaScript.
+**Método:** revisión estática del HTML, CSS y JavaScript; validación automatizada con HTML Validate, axe-core para WCAG 2 A/AA y Playwright en 320 px, 398 px, 768 px y 1440 px; prueba de teclado, interacción de timeline, menú móvil, enlaces internos, overflow y sintaxis JavaScript.
 
-**Limitación:** no se ejecutó una herramienta automática completa como axe o Lighthouse. Los resultados de contraste se calcularon sobre los colores definidos en CSS; los textos sobre fotografías y degradados deben confirmarse también con una herramienta visual cuando las imágenes definitivas estén cerradas.
+**Limitación:** los recursos HTTPS externos se bloquean durante la prueba automatizada para evitar depender de la red; sus URL, protocolo y atributos de seguridad se validan de forma estática. Los textos sobre fotografías y degradados deben confirmarse también con una herramienta visual cuando las imágenes definitivas estén cerradas.
+
+## Estado CI/CD
+
+El comando `npm test` ejecuta HTML Validate, axe-core con las reglas WCAG 2 A/AA, comprobaciones de HTML5/ARIA/enlaces seguros y pruebas de interacción y responsive con Playwright. El workflow `.github/workflows/ci-cd.yml` ejecuta estas pruebas en cada cambio de `main` y despliega el sitio aprobado mediante GitHub Pages.
 
 ## 1. Resumen ejecutivo
 
