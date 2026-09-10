@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Perfil futbolístico de Cristiano Ronaldo: biografía, trayectoria, estadísticas y momentos destacados.">
+  <title>Cristiano Ronaldo | Perfil futbolístico</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Cristiano Ronaldo, volver al inicio">
+        <span class="brand-mark">CR</span>
+        <span><strong>CR7</strong><small>Perfil futbolístico</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only menu-label">Abrir menú</span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#biografia">Biografía</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#estadisticas">Estadísticas</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Una carrera escrita con ambición</p>
+        <h1 id="hero-title">Cristiano <em>Ronaldo</em></h1>
+        <p class="hero-lead">El trabajo diario convertido en una trayectoria extraordinaria: goles, títulos y una mentalidad que no negocia con el límite.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#trayectoria">Explorar trayectoria <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="https://www.cristianoronaldo.com/" target="_blank" rel="noopener noreferrer">Sitio oficial <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-stat" aria-label="Dato destacado">
+        <span class="hero-stat-number">7</span>
+        <span class="hero-stat-label">El número que se convirtió en identidad</span>
+      </div>
+      <div class="hero-line" aria-hidden="true"></div>
+    </section>
+
+    <section class="section biography" id="biografia" aria-labelledby="bio-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / El jugador</p>
+        <h2 id="bio-title">Más que talento,<br><span>una disciplina.</span></h2>
+      </div>
+      <div class="bio-content">
+        <p class="intro-copy">Cristiano Ronaldo dos Santos Aveiro nació en Funchal, Madeira, el 5 de febrero de 1985. Desde sus primeros pasos en el Sporting de Portugal, su velocidad, técnica y determinación lo llevaron a convertirse en uno de los futbolistas más reconocibles de la historia.</p>
+        <dl class="bio-details">
+          <div><dt>Nombre completo</dt><dd>Cristiano Ronaldo dos Santos Aveiro</dd></div>
+          <div><dt>Lugar de nacimiento</dt><dd>Funchal, Madeira</dd></div>
+          <div><dt>Posición</dt><dd>Delantero / Extremo</dd></div>
+          <div><dt>Selección</dt><dd>Portugal</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section journey" id="trayectoria" aria-labelledby="journey-title">
+      <div class="section-heading heading-row">
+        <div><p class="eyebrow">02 / El camino</p><h2 id="journey-title">Una línea de<br><span>tiempo viva.</span></h2></div>
+        <p class="section-note">Selecciona un capítulo para descubrir el contexto de cada etapa.</p>
+      </div>
+      <ul class="timeline">
+        <li class="timeline-item is-active">
+          <button class="timeline-trigger" type="button" aria-expanded="true" aria-controls="story-sporting">
+            <span class="timeline-year">2002</span><span class="timeline-club">Sporting CP</span><span class="timeline-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="timeline-story" id="story-sporting"><p>Debuta con el primer equipo del Sporting de Portugal y llama la atención por su desborde y personalidad.</p></div>
+        </li>
+        <li class="timeline-item">
+          <button class="timeline-trigger" type="button" aria-expanded="false" aria-controls="story-united">
+            <span class="timeline-year">2003</span><span class="timeline-club">Manchester United</span><span class="timeline-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="timeline-story" id="story-united" hidden><p>Sir Alex Ferguson lo incorpora a Old Trafford. Allí transforma su potencial en una presencia decisiva y gana su primera Champions League.</p></div>
+        </li>
+        <li class="timeline-item">
+          <button class="timeline-trigger" type="button" aria-expanded="false" aria-controls="story-madrid">
+            <span class="timeline-year">2009</span><span class="timeline-club">Real Madrid</span><span class="timeline-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="timeline-story" id="story-madrid" hidden><p>Comienza una etapa histórica en Madrid: récords goleadores, cuatro Champions League y una rivalidad que marcó una era.</p></div>
+        </li>
+        <li class="timeline-item">
+          <button class="timeline-trigger" type="button" aria-expanded="false" aria-controls="story-portugal">
+            <span class="timeline-year">2016</span><span class="timeline-club">Portugal</span><span class="timeline-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="timeline-story" id="story-portugal" hidden><p>Levanta la Eurocopa con Portugal y confirma su influencia más allá de los clubes.</p></div>
+        </li>
+        <li class="timeline-item">
+          <button class="timeline-trigger" type="button" aria-expanded="false" aria-controls="story-al-nassr">
+            <span class="timeline-year">2023</span><span class="timeline-club">Al-Nassr</span><span class="timeline-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="timeline-story" id="story-al-nassr" hidden><p>Abre un nuevo capítulo en Arabia Saudí y continúa compitiendo al máximo nivel con el Al-Nassr.</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section stats" id="estadisticas" aria-labelledby="stats-title">
+      <div class="section-heading"><p class="eyebrow">03 / La huella</p><h2 id="stats-title">Números que<br><span>cuentan historias.</span></h2></div>
+      <ul class="stats-grid">
+        <li class="stat-card"><strong>5</strong><span>Balones de Oro</span><small>Reconocimiento individual</small></li>
+        <li class="stat-card stat-card-featured"><strong>5</strong><span>Champions League</span><small>El gran escenario europeo</small></li>
+        <li class="stat-card"><strong>900+</strong><span>Goles oficiales</span><small>Una cifra en movimiento</small></li>
+        <li class="stat-card"><strong>2016</strong><span>Campeón de Europa</span><small>Portugal, historia compartida</small></li>
+      </ul>
+    </section>
+
+    <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
+      <div class="section-heading heading-row"><div><p class="eyebrow">04 / Instantes</p><h2 id="gallery-title">El fútbol<br><span>en imágenes.</span></h2></div><p class="section-note">Una carrera también se recuerda por sus gestos, escenarios y celebraciones.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-card gallery-card-large"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo con la camiseta de Portugal durante un partido" loading="lazy"><figcaption><span>01</span><strong>Portugal</strong><small>La camiseta que representa un país</small></figcaption></figure>
+        <figure class="gallery-card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Cristiano_Ronaldo_-_October_12%2C_2010.jpg" alt="Cristiano Ronaldo durante un partido en 2010" loading="lazy"><figcaption><span>02</span><strong>Determinación</strong><small>Concentración antes del siguiente reto</small></figcaption></figure>
+        <figure class="gallery-card"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/C.Ronaldo_at_Museum_Mundo_Sporting.JPG" alt="Cristiano Ronaldo en el museo del Sporting de Portugal" loading="lazy"><figcaption><span>03</span><strong>Origen</strong><small>El comienzo de una identidad</small></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title"><div><p class="eyebrow">El próximo capítulo</p><h2 id="cta-title">La historia<br>continúa.</h2></div><a class="button button-light" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">CR</span><span>Perfil futbolístico</span></div><p>Una página informativa independiente. Datos y fotografías enlazados a fuentes públicas.</p><div class="footer-links"><a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Fuente biográfica</a><a href="https://commons.wikimedia.org/wiki/Category:Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Imágenes en Commons</a></div></footer>
+</body>
+</html>
