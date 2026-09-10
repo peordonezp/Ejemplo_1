@@ -1,0 +1,12 @@
+{
+  "name": "pagina-cristiano-ronaldo",
+  "private": true,
+  "scripts": {
+    "test": "html-validate index.html && node tests/audit.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "html-validate": "^9.4.0",
+    "playwright": "^1.55.0"
+  }
+}
